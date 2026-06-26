@@ -111,6 +111,49 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Ownables */}
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                    <Shield className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Ownables</h3>
+                    <p className="text-sm text-gray-500">Digital Collectibles Platform</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Ownables are new kind of digital asset based on blockchain technology. They 
+                  can be used for anything from digital collectibles to proof of ownership for real-world assets.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                    Private and secure assets
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                    Verified ownership
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                    Always in your control
+                  </div>
+                </div>
+                <div className="flex space-x-3">
+                  <a href="https://ownables.me" className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-center transition-colors">
+                    <Globe className="w-4 h-4 inline mr-2" />
+                    Website
+                  </a>
+                  <a href="https://docs.ownables.me" className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-center transition-colors">
+                    <BookOpen className="w-4 h-4 inline mr-2" />
+                    Docs
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* GoLand */}
             <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="p-8">
@@ -146,49 +189,6 @@ function App() {
                     <Github className="w-4 h-4 inline mr-2" />
                     Source
                   </a>
-                  <button disabled className="flex-1 border border-gray-200 text-gray-400 px-4 py-2 rounded-lg text-center cursor-not-allowed">
-                    <BookOpen className="w-4 h-4 inline mr-2" />
-                    Docs
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Ownables */}
-            <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <Shield className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">Ownables</h3>
-                    <p className="text-sm text-gray-500">Digital Collectibles Platform</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-6">
-                  Ownables are new kind of digital asset based on blockchain technology. They 
-                  can be used for anything from digital collectibles to proof of ownership for real-world assets.
-                </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                    Private and secure assets
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                    Verified ownership
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                    Always in your control
-                  </div>
-                </div>
-                <div className="flex space-x-3">
-                  <button disabled className="flex-1 bg-gray-100 text-gray-400 px-4 py-2 rounded-lg text-center cursor-not-allowed">
-                    <Github className="w-4 h-4 inline mr-2" />
-                    Source
-                  </button>
                   <button disabled className="flex-1 border border-gray-200 text-gray-400 px-4 py-2 rounded-lg text-center cursor-not-allowed">
                     <BookOpen className="w-4 h-4 inline mr-2" />
                     Docs
